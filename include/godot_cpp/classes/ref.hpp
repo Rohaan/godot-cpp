@@ -211,6 +211,11 @@ public:
 		ref(memnew(T()));
 	}
 
+	template <typename... ARGS>
+	void instantiate(ARGS... args) {
+		ref(memnew(T(std::forward<ARGS>(args)...)));
+	}
+
 	Ref() {}
 
 	~Ref() {

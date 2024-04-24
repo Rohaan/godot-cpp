@@ -24,4 +24,4 @@ text = "Click me!"
 
 [node name="ExampleChild" type="ExampleChild" parent="."]
 
-[connection signal="custom_signal" from="Example" to="." method="_on_Example_custom_signal"]
+[Connection signal="custom_signal" from="Example" to="." method="_on_Example_custom_signal"]
